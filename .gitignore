@@ -1,4 +1,6 @@
 /nohup.out
-/main
+/main1
 /go.mod
 /go.sum
+golang_script.err.log
+golang_script.out.log
