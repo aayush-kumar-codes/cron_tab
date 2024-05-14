@@ -42,6 +42,8 @@ var (
 		{"https://www.upwork.com/ab/feed/jobs/rss?q=django&sort=recency&job_type=hourly%2Cfixed&contractor_tier=1%2C2%2C3&proposals=0-4%2C5-9%2C10-14%2C15-19%2C20-49&budget=100-499%2C500-999%2C1000-4999%2C5000-&workload=as_needed%2Cpart_time%2Cfull_time&duration_v3=week%2Cmonth%2Csemester%2Congoing&verified_payment_only=1&connect_price=0-2%2C4%2C6&paging=0%3B50&api_params=1&securityToken=47afe9a9c98905215eff0ebb88e56c6569dcdc4d488154ffd5919b79fe7dea7de636ce5f4f17916ec086e90afb58c177a39d0220953e320ac563245149f0f2a3&userUid=700193349553074176&orgUid=700193349557268481", "#upwork_feed_python"},
 		{"https://www.upwork.com/ab/feed/jobs/rss?q=ror&sort=recency&job_type=hourly%2Cfixed&contractor_tier=1%2C2%2C3&proposals=0-4%2C5-9%2C10-14%2C15-19%2C20-49&budget=100-499%2C500-999%2C1000-4999%2C5000-&workload=as_needed%2Cpart_time%2Cfull_time&duration_v3=week%2Cmonth%2Csemester%2Congoing&verified_payment_only=1&connect_price=0-2%2C4%2C6&paging=0%3B50&api_params=1&securityToken=47afe9a9c98905215eff0ebb88e56c6569dcdc4d488154ffd5919b79fe7dea7de636ce5f4f17916ec086e90afb58c177a39d0220953e320ac563245149f0f2a3&userUid=700193349553074176&orgUid=700193349557268481", "#upwork_feed_ror"},
 		{"https://www.upwork.com/ab/feed/jobs/rss?q=java&sort=recency&job_type=hourly%2Cfixed&contractor_tier=1%2C2%2C3&proposals=0-4%2C5-9%2C10-14%2C15-19%2C20-49&budget=100-499%2C500-999%2C1000-4999%2C5000-&workload=as_needed%2Cpart_time%2Cfull_time&duration_v3=week%2Cmonth%2Csemester%2Congoing&verified_payment_only=1&connect_price=0-2%2C4%2C6&paging=0%3B50&api_params=1&securityToken=47afe9a9c98905215eff0ebb88e56c6569dcdc4d488154ffd5919b79fe7dea7de636ce5f4f17916ec086e90afb58c177a39d0220953e320ac563245149f0f2a3&userUid=700193349553074176&orgUid=700193349557268481", "#upwork_feed_java"},
+		{"https://www.upwork.com/ab/feed/jobs/rss?q=Vuejs&sort=recency&job_type=hourly%2Cfixed&contractor_tier=1%2C2%2C3&proposals=0-4%2C5-9%2C10-14%2C15-19%2C20-49&budget=100-499%2C500-999%2C1000-4999%2C5000-&workload=as_needed%2Cpart_time%2Cfull_time&duration_v3=week%2Cmonth%2Csemester%2Congoing&verified_payment_only=1&connect_price=0-2%2C4%2C6&paging=0%3B50&api_params=1&securityToken=47afe9a9c98905215eff0ebb88e56c6569dcdc4d488154ffd5919b79fe7dea7de636ce5f4f17916ec086e90afb58c177a39d0220953e320ac563245149f0f2a3&userUid=700193349553074176&orgUid=700193349557268481", "#upwork_feed_vuejs"},
+		{"https://www.upwork.com/ab/feed/jobs/rss?q=Nuxtjs&sort=recency&job_type=hourly%2Cfixed&contractor_tier=1%2C2%2C3&proposals=0-4%2C5-9%2C10-14%2C15-19%2C20-49&budget=100-499%2C500-999%2C1000-4999%2C5000-&workload=as_needed%2Cpart_time%2Cfull_time&duration_v3=week%2Cmonth%2Csemester%2Congoing&verified_payment_only=1&connect_price=0-2%2C4%2C6&paging=0%3B50&api_params=1&securityToken=47afe9a9c98905215eff0ebb88e56c6569dcdc4d488154ffd5919b79fe7dea7de636ce5f4f17916ec086e90afb58c177a39d0220953e320ac563245149f0f2a3&userUid=700193349553074176&orgUid=700193349557268481", "#upwork_feed_vuejs"},
 
 		// {"https://www.upwork.com/ab/feed/jobs/rss?q=Nodejs&sort=recency&t=0,1&contractor_tier=1,2,3&client_hires=0&proposals=0-4,5-9,10-14&amount=500-50000&payment_verified=1&hourly_rate=8-50&api_params=1&securityToken=47afe9a9c98905215eff0ebb88e56c6569dcdc4d488154ffd5919b79fe7dea7de636ce5f4f17916ec086e90afb58c177a39d0220953e320ac563245149f0f2a3&userUid=700193349553074176&orgUid=700193349557268481", "#upwork_feed_node"},
 		// {"https://www.upwork.com/ab/feed/jobs/rss?q=golang&sort=recency&t=0,1&contractor_tier=1,2,3&client_hires=0&proposals=0-4,5-9,10-14&amount=500-50000&payment_verified=1&hourly_rate=8-50&api_params=1&securityToken=47afe9a9c98905215eff0ebb88e56c6569dcdc4d488154ffd5919b79fe7dea7de636ce5f4f17916ec086e90afb58c177a39d0220953e320ac563245149f0f2a3&userUid=700193349553074176&orgUid=700193349557268481", "#upwork_feed_golang"},
@@ -66,7 +68,7 @@ func init() {
 
 	var err error
 	// db, err = sql.Open("mysql", "root:root@tcp(localhost:3306)/rssfeeds")
-	db, err = sql.Open("postgres", "postgres://superdbuser:Password1234@localhost/rssfeeds")
+	db, err = sql.Open("postgres", "postgres://superdbuser:Java@123@localhost/rssfeeds")
 	if err != nil {
 		print("KUGIUGIUGIGIUGIUGUGIUGIUJ", err)
 		panic(err)
@@ -81,15 +83,16 @@ func init() {
 
 	_, err = db.Exec("CREATE TABLE IF NOT EXISTS feed_details (title VARCHAR(255), link VARCHAR(255), PRIMARY KEY(title))")
 	if err != nil {
-		print("xxbcvhbx")
+		// print("xxbcvhbx")
 		panic(err)
 	}
 	// println("JYGYUGYGYYH")
 
 	// Replace with your Slack bot token
 	// slackBotToken := "xoxb-5024190216176-4993950875446-iwQ7hlX1MoE2A6kwXpa263DM"
-	slackBotToken := "xoxb-4994422805927-5042532385296-4HDreDBsmgQTpOVL5GjObnGG"
-
+	// slackBotToken := "xoxb-4994422805927-5042532385296-4HDreDBsmgQTpOVL5GjObnGG"
+	slackBotToken := "xoxb-4994422805927-5042532385296-GUlnsnxHXMJVGIvqestS3dpQ"
+	// xapp-1-A0518F6S108-7099144120501-a7976c2f67aa2e7fb878321486535a21b9e7a5e1a17a4962671355bfd27da6b4
 	sc = slack.New(slackBotToken)
 	// print("\nJHGFYG========")
 }
